@@ -16,12 +16,10 @@ The problem of adapting models from a source domain using data from any target d
 # Pipeline
 
 {% include add_image.html 
-    image="/assets/img/pipeline.png"
+    image="assets/img/pipeline.png"
     caption="" 
     alt_text="Alt text" 
     type="Fig:" 
-    width="1000"
-    height="300"
 %}
 
 <br>
