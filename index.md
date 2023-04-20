@@ -20,6 +20,8 @@ The problem of adapting models from a source domain using data from any target d
     caption="" 
     alt_text="Alt text" 
     type="Fig:" 
+    width="1000"
+    height="300"
 %}
 
 <br>
