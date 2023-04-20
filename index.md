@@ -45,7 +45,7 @@ The problem of adapting models from a source domain using data from any target d
 %}
 
 
-# Empherical Results
+# Empirical Results
 
 
 {% include add_image.html 
