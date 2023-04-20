@@ -7,17 +7,17 @@ authors:
     equal_contrib: true
     affiliations: [1]
   - name: Kowshik Thopalli
-    link: https://www.example.com/kowshik
+    link: https://kowshikthopalli.github.io/
     equal_contrib: true
     affiliations: [1]
   - name: Spring Berman
-    link: https://www.example.com/spring
+    link: https://search.asu.edu/profile/1943720
     affiliations: [2]
   - name: Pavan Turaga
-    link: https://www.example.com/pavan
+    link: https://pavanturaga.com/
     affiliations: [1, 2]
   - name: Jayaraman J. Thiagarajan
-    link: https://www.example.com/jayaraman
+    link: https://jjthiagarajan.com/
     affiliations: [1]
 
 affiliations:
