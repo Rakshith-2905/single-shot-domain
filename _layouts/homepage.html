@@ -31,29 +31,11 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/pub.css">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/mpii_files/mpi-inf.css">
     <script src="./assets/js/github-stars.js"></script>
     <script type="text/javascript" src="./assets/js/jquery.js"></script>
 
   </head>
   <body>
-    {% if site.enable_mpi_logo %}
-    <lightonly>
-    <div id="head1o2">
-      <div id="mpiidotspacer"></div><div id="mpiidot"></div></div>
-    <div id="head2o2">
-      <div id="deco"></div>
-      <div id="mpiitext" >max planck institut<br>
-        informatik</div>
-      <img id="mpiilogo" src="./assets/mpii_files/mpii.jpg" alt="mpii" usemap="#Map" width="150" height="50">
-      <map name="Map" id="Map">
-        <area shape="rect" coords="48.5,7,148,35" href="https://www.mpi-inf.mpg.de/" target="_blank" rel="noopener" alt="MPII">
-        <area shape="circle" coords="20.5,24.5,20" href="https://www.mpg.de/" target="_blank" rel="noopener" alt="Max Planck Society">
-      </map>
-    </div>
-    </lightonly>
-    {% endif %}
-
     <script src="./assets/js/vanilla-back-to-top.min.js"></script>
     <script>addBackToTop({
         backgroundColor: '#fff',
@@ -75,95 +57,77 @@
     
     <div class="wrapper">
       <header>
-        
-        {% if site.avatar %}
-        <a class="image avatar"><img src="{{ site.avatar }}" alt="avatar" /></a>
-        {% endif %}
-
         <h1>{{ site.title }}</h1>
 
-        {% if site.position %}
-        <position style="font-size:1.10rem;">{{ site.position }}</position>
+        {% if site.authors %}
+        <div style="display: flex; justify-content: center; grid-gap: 10px;">
+          {% for author in site.authors %}
+            <h2 style="font-size:1.10rem;">{{ author }}</h2>
+          {% endfor %}
+        </div>
+        {% endif %}
+        
+        {% if site.affiliations %}
+        <div style="display: flex; justify-content: center; grid-gap: 20px;">
+          {% for affiliation in site.affiliations %}
+           <a href="{{ affiliation.link }}"><small><span>{{ affiliation.name }}</span></small></a>
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if site.conference %}
+        <div style="display: flex; justify-content: center; grid-gap: 20px; margin-top: 10px;">
+          <a href="{{ affiliation.link }}"><small style="font-style: italic;"><span>{{ site.conference }}</span></small></a>
+        </div>
         <br>
         {% endif %}
-        {% if site.affiliation %}
-        <a href="{{ site.affiliation_link }}" rel="noopener"><autocolor>{{ site.affiliation }}</autocolor></a>
-        <br>
-        {% endif %}
-        {% if site.email %}
-        <email>{{ site.email }}</email>
-        {% endif %}
 
-        <br>
-        <br>
-        <div class="social-icons">
-        {% if site.google_scholar %}
-        <a style="margin: 0 5px 0 0" href="{{ site.google_scholar }}">
-          <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
-        </a>  
-        {% endif %}
+        <div class="cta">
+          {% if site.paper_link %}
+          <a href="{{ site.paper_link }}">
+            <span><i class="fa fa-file-pdf" style="font-size:1.2rem; margin-right: 3px;"></i>Paper</span>
+          </a>  
+          {% endif %}
 
-        {% if site.cv_link %}
-        <a style="margin: 0 5px 0 0" href="{{ site.cv_link }}">
-          <i class="ai ai-cv" style="font-size:1.3rem;"></i>
-        </a>
-        {% endif %}
+          {% if site.slides_link %}
+          <a href="{{ site.slides_link }}">
+            <span><i class="fas fa-chalkboard" style="font-size:1.2rem; margin-right: 3px;"></i>Slides</span>
+          </a>
+          {% endif %}
 
-        {% if site.github_link %}
-        <a style="margin: 0 5px 0 0" href="{{ site.github_link }}">
-          <i class="fab fa-github"></i>
-        </a>
-        {% endif %}
+          {% if site.poster_link %}
+          <a href="{{ site.poster_link }}">
+            <span><i class="fas fa-file-powerpoint" style="font-size:1.2rem; margin-right: 3px;"></i>Poster</span>
+          </a>
+          {% endif %}
 
-        {% if site.linkedin %}
-        <a style="margin: 0 5px 0 0" href="{{ site.linkedin }}">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        {% endif %}
+          {% if site.video_link %}
+          <a href="{{ site.video_link }}">
+            <span><i class="fa fa-video" style="font-size:1.2rem; margin-right: 3px;"></i>Video</span>
+          </a>
+          {% endif %}
 
-        {% if site.twitter %}
-        <a style="margin: 0 0 0 0" href="{{ site.twitter }}">
-          <i class="fab fa-twitter"></i>
-        </a>
-        {% endif %}
+          {% if site.github_link %}
+          <a href="{{ site.github_link }}">
+            <span><i class="fab fa-github" style="font-size:1.2rem; margin-right: 3px;"></i>Github</span>
+          </a>
+          {% endif %}
         </div>
         <br>
 
       </header>
-      <section>
+
 
       {{ content }}
 
       <br>
 
       {% if site.enable_footnote %}
-      <p><small>Powered by Jekyll and <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a> theme.</small></p>
+      <p><small>Copyright © 2023 Arizona State University</small></p>
       {% endif %}
 
       <br>
-      {% if site.clustrmaps_id %}
-      <div style="width:100px; pointer-events: none;">
-      <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=043361&w=153&t=n&d={{ site.clustrmaps_id }}&co=ffffff&cmo=3eb7f0&ct=043361'></script>
-      </div>
-      {% endif %}
       
-      </section>
-      <footer>
-        <div style="font: 12px/1.2 Crimson Pro, serif">
-        <p>
-        <small>
-        {% if site.imprint %}
-        <a href="{{ site.imprint }}" rel="noopener"><autocolor>Imprint / Impressum</autocolor></a><br>
-        {% endif %}
-        {% if site.data_protection %}
-        <a href="{{ site.data_protection }}" rel="noopener"><autocolor>Data Protection / Datenschutzhinweis</autocolor></a>
-        {% endif %}
-        </small>
-        </p>
-        </div>
-        <br>
-        <br>
-      </footer>
+
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
   </body>

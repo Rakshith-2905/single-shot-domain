@@ -1,40 +1,34 @@
-# Basic Information 
-title: Your Name
-position: Your Position
-affiliation: Max Planck Institute for Informatics
-affiliation_link: https://www.mpi-inf.mpg.de/
-email: example (at) mpi-inf.mpg.de
+# Basic Information
+title: Adaptive Aggregation Networks for Class-Incremental Learning
+authors:
+  - Rakshith Subramanyam
+  - Rakshith Subramanyam
+affiliations:
+  - name: Arizona State University
+    link: https://www.mpi-inf.mpg.de/
+  - name: Max Planck Institute for Informatics
+    link: https://www.mpi-inf.mpg.de/
+conference: 2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition
 
 # Search Engine Optimization (SEO)
 keywords: minimal light
 canonical: https://minimal-light-theme-mpi-inf.yliu.me/
 description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
 
-# The option is used to enable the MPI Informatics template.
-enable_mpi_logo: true
-
-# The option is used to show the last update time.
-enable_last_update: false
-
 # Links
-google_scholar: https://scholar.google.com/
-cv_link: assets/files/curriculum_vitae.pdf
-github_link: https://github.com/
-linkedin: https://www.linkedin.com/
-twitter: https://twitter.com/
+paper_link: ./assets/files/paper.pdf
+slides_link: https://github.com/
+poster_link: https://www.linkedin.com/
+video_link: https://www.linkedin.com/
+github_link: https://www.github.com/
 
-# Images 
+# Images
 avatar: ./assets/img/avatar.png
 favicon: ./assets/img/favicon.png
 favicon_dark: ./assets/img/favicon-dark.png
 
 # Footnotes
 enable_footnote: true
-
-# General Data Protection Regulation (GDPR) information
-# If you don't need to add the GDPR information, you may remove the following lines.
-imprint: https://imprint.mpi-klsb.mpg.de/inf/people.mpi-inf.mpg.de/username
-data_protection: https://data-protection.mpi-klsb.mpg.de/inf/people.mpi-inf.mpg.de/username?lang=en
 
 # The following files will be removed from the generated website.
 exclude:
