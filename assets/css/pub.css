@@ -24,11 +24,23 @@
 
 blockquote { background: var(--global-bg-color); border-left: 2px solid var(--global-theme-color); margin: 1.5em 10px; padding: 0.5em 10px; font-size: 1.2rem; }
 
+@media (prefers-color-scheme: dark) {
+  .affiliation, .conference {
+    color: white;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .affiliation, .conference {
+    color: black;
+  }
+}
+
+
 @media print, screen and (min-width: 480px) {.col-sm-9 {width: 100%;}}
 
 .publications { margin-top: 2rem; }
 
-.publications h1 { color: var(--global-theme-color); font-size: 2rem; text-align: center; margin-top: 1em; margin-bottom: 1em; }
+.publications h1 { color: var(--global-theme-color); font-size: rem; text-align: center; margin-top: 1em; margin-bottom: 1em; }
 
 .publications h2 { margin-bottom: 1rem; }
 

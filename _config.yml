@@ -1,26 +1,47 @@
 # Basic Information
-title: Adaptive Aggregation Networks for Class-Incremental Learning
+title: Single-Shot Domain Adaptation via target-aware generative augmentations
+
 authors:
-  - Rakshith Subramanyam
-  - Rakshith Subramanyam
+  - name: Rakshith Subramanyam
+    link: https://www.example.com/rakshith
+    equal_contrib: true
+    affiliations: [1]
+  - name: Kowshik Thopalli
+    link: https://www.example.com/kowshik
+    equal_contrib: true
+    affiliations: [1]
+  - name: Spring Berman
+    link: https://www.example.com/spring
+    affiliations: [2]
+  - name: Pavan Turaga
+    link: https://www.example.com/pavan
+    affiliations: [1, 2]
+  - name: Jayaraman J. Thiagarajan
+    link: https://www.example.com/jayaraman
+    affiliations: [1]
+
 affiliations:
-  - name: Arizona State University
-    link: https://www.mpi-inf.mpg.de/
-  - name: Max Planck Institute for Informatics
-    link: https://www.mpi-inf.mpg.de/
-conference: 2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition
+  - symbol: 1
+    name: Arizona State University
+    link: https://www.asu.edu/
+  - symbol: 2
+    name: Lawrence Livermore National Laboratory
+    link: https://www.llnl.gov/
+
+
+conference: 2023 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2023), 
 
 # Search Engine Optimization (SEO)
-keywords: minimal light
-canonical: https://minimal-light-theme-mpi-inf.yliu.me/
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
+keywords: Single-Shot Domain Adaptation, Generative Augmentations, Domain Adaptation,SiSTA
+canonical: https://rakshithsubramanyam.github.io/
+description: This paper proposes a novel single-shot domain adaptation method that leverages target-aware generative augmentations to improve the performance of the source model on the target domain.
 
 # Links
 paper_link: ./assets/files/paper.pdf
-slides_link: https://github.com/
+slides_link: https://www.linkedin.com/
 poster_link: https://www.linkedin.com/
 video_link: https://www.linkedin.com/
-github_link: https://www.github.com/
+github_link: https://github.com/kowshikthopalli/SISTA
 
 # Images
 avatar: ./assets/img/avatar.png
@@ -28,7 +49,7 @@ favicon: ./assets/img/favicon.png
 favicon_dark: ./assets/img/favicon-dark.png
 
 # Footnotes
-enable_footnote: true
+enable_footnote: false
 
 # The following files will be removed from the generated website.
 exclude:
