@@ -50,7 +50,7 @@ The problem of adapting models from a source domain using data from any target d
 
 {% include add_image.html 
     image="assets/img/domains.png"
-    caption="We emulate real-world shifts with increasing severity. We evaluate SiSTA and other methods on these domains" 
+    caption="We emulate real-world shifts with increasing severity." 
     alt_text="Alt text" 
     type="Fig:" 
     width="500"
